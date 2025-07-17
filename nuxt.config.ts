@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   ssr: false,
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
   modules: ['@nuxt/content', 'vuetify-nuxt-module'],
   css: ['@mdi/font/css/materialdesignicons.css'],
   vuetify: {
