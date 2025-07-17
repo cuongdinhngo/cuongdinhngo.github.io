@@ -16,7 +16,7 @@
               variant="elevated"
             >
               <v-img
-                :src="`/images/${profile.avatarSrc}`"
+                :src="getImagePath(profile.avatarSrc)"
                 :alt="`${profile.name}'s Avatar`"
                 cover
                 rounded="circle"
@@ -85,6 +85,7 @@
 </template>
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
+import { getImagePath } from '~/utils';
 
 interface Profile {
   name: string;
