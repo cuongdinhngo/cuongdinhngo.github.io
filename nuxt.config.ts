@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   ssr: false,
+  app: {
+    baseURL: '/profile/', // GitHub Pages repository name
+    buildAssetsDir: '/profile/_nuxt/', // Where Nuxt will look for assets
+  },
   nitro: {
     output: {
       dir: '.output',
