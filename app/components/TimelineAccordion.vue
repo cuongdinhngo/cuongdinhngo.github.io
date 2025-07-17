@@ -1,5 +1,5 @@
 <template>
-  <v-expansion-panels variant="accordion">
+  <v-expansion-panels variant="accordion" elevation="0">
     <v-expansion-panel
       v-for="(item, index) in items"
       :key="index"
