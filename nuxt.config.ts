@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '/profile/', // GitHub Pages repository name
-    buildAssetsDir: '/profile/_nuxt/', // Where Nuxt will look for assets
   },
   nitro: {
     output: {
