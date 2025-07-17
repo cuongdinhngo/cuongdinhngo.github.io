@@ -1,0 +1,58 @@
+[
+  {
+    "year": "2021 - 2025",
+    "title": "Software Engineer",
+    "subtitle": "HomeToGo GmbH, Berlin, Germany",
+    "description": "Official member of the PandA (Price & Availability) team, working to achieve 100% coverage, accuracy, and storage on price and availability data points. Collaborated with international teammates from Lithuania and TAM from Germany to align quarterly targets. Resolved data quality bottlenecks that previously led to high customer complaints. Increased combined accuracy to 90% (availability: 96%, price: 94%), significantly reducing discrepancies and enabling seamless integration with Google Vacation Finder. Leveraged high accuracy metrics to unlock a new B2B2C business model, providing partners with tools to integrate vacation rental properties into consumer-facing platforms. Designed and implemented inventory processes that generate static feeds for better partner integration.",
+    "skills": [
+      "PHP",
+      "Symfony",
+      "Aerospike",
+      "MySQL",
+      "ElasticSearch",
+      "Jenkins CI/CD",
+      "AWS S3",
+      "Redis"
+    ]
+  },
+  {
+    "year": "2020 - 2021",
+    "title": "Team lead & Senior Developer",
+    "subtitle": "Nitro Tech Asia, Da Nang, Vietnam",
+    "description": "Created a public Laravel package to streamline common Japanese utility tasks (postal code retrieval, localization, CSV handling), significantly reducing development time and resources for future applications.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Google APIs",
+      "Alibaba Cloud"
+    ]
+  },
+  {
+    "year": "2018 - 2020",
+    "title": "Software Engineer",
+    "subtitle": "Asian Tech, Da Nang, Vietnam",
+    "description": "Developed new features for a messaging platform, ensuring high performance for mass email campaigns. Built a proof of concept for cloud-based operations using AWS Lambda, DynamoDB, SQS and ECS.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "AWS Lambda",
+      "AWS SQS",
+      "AWS DynamoDB",
+      "AWS ECS"
+    ]
+  },
+  {
+    "year": "2012 - 2018",
+    "title": "Deputy Head of Training Division",
+    "subtitle": "DNICT, Da Nang, Vietnam",
+    "description": "Managed the teaching team, ensuring quality of classes and curriculum standards. Combined syllabus for open source course LAMP (Linux, Apache, MySQL & PHP), establishing comprehensive training programs.",
+    "skills": [
+      "PHP",
+      "MySQL",
+      "Apache",
+      "Linux",
+      "HTML & CSS"
+    ]
+  }
+]
