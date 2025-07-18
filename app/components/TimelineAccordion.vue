@@ -24,8 +24,8 @@
       </template>
 
       <template #text>
-        <v-card-text class="text-body-2 px-0">
-          {{ item.description }}
+        <v-card-text class="text-body-2">
+          <div v-html="parseToBulletPoints(item.description || '')"></div>
         </v-card-text>
         <v-card-title
           v-if="item.skills"
@@ -39,6 +39,8 @@
   </v-expansion-panels>
 </template>
 <script setup lang="ts">
+import { parseToBulletPoints } from '~/utils';
+
 type TimelineItem = {
   year: string | number;
   title: string;
