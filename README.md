@@ -1,75 +1,35 @@
-# Nuxt Minimal Starter
+# Cuong Ngo - Full Stack Developer
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Building scalable web applications with modern technologies
 
-## Setup
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ngodinhcuong-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ngodinhcuong/)
+[![GitHub](https://img.shields.io/badge/GitHub-cuongdinhngo-grey?style=flat&logo=github)](https://github.com/cuongdinhngo)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=flat)](https://cuongdinhngo.github.io)
 
-Make sure to install dependencies:
+## About Me
 
-```bash
-# npm
-npm install
+I'm a **Full Stack Developer** with 10+ years of experience building enterprise-scale applications.
 
-# pnpm
-pnpm install
+### 💻 Tech Stack
+**Frontend**: Vue.js, Nuxt.js, Vuetify, Tailwind CSS
+**Backend**: PHP, Laravel, Symfony
+**Cloud**: AWS (Lambda, S3, DynamoDB, SQS, ECS), Alibaba Cloud
+**Database**: MySQL, ElasticSearch, Redis, Aerospike
+**Tools**: Jenkins CI/CD, Git, Docker
 
-# yarn
-yarn install
+## Featured Projects
 
-# bun
-bun install
-```
+### 📚 [Book Management App](https://cuongdinhngo.github.io/books-app/)
+Modern library management system with real-time updates
+- **Tech**: Vue.js, Nuxt, Supabase, Tailwind CSS
+- **Features**: CRUD operations, real-time notifications, modern UI
 
-## Development Server
+### 👕 [Ecom Fashion](https://cuongdinhngo.github.io/ecom-fashion/profile/)
+Comprehensive e-commerce solution for fashion stores
+- **Tech**: Vue.js, Nuxt, Vuetify, Tauri
+- **Features**: Product management, user profiles, order processing
 
-Start the development server on `http://localhost:3000`:
+## Contact & Availability
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+📧 **Available for**: Full-time positions, consulting, and freelance projects  
+🌍 **Location**: Open to remote work and relocation 
