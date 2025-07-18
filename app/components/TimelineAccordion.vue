@@ -29,10 +29,10 @@
         </v-card-text>
         <v-card-title
           v-if="item.skills"
-          class="px-0"
+          class="px-0 text-wrap"
         >
           <span class="text-subtitle-2 font-italic">Tech stack:</span>
-          <span class="font-weight-bold text-subtitle-2 ml-2">{{ item.skills.toString() }}</span>
+          <span class="font-weight-bold text-subtitle-2 ml-2">{{ item.skills.join(', ') }}</span>
         </v-card-title>
       </template>
     </v-expansion-panel>
