@@ -1,8 +1,8 @@
 {
-  "title": "Vex Dashboard",
-  "description": "Vex Dashboard is a versatile admin dashboard template designed for VueJs applications. The dashboard includes various components such as charts, tables, and small apps (Mailbox, Calendar, Profile, Chat, Scrum Board)",
+  "title": "Advanced Dashboard Suite",
+  "description": "A versatile admin dashboard template designed for VueJs applications. Components included: Email/mailbox interface; Team calendar system; User profile management; Chat; Scrum board; Various charts and analytics",
   "image": "vex-dashboard.png",
-  "tech": ["Vue.js", "Nuxt", "Vuetify"],
+  "tech": ["Nuxt 3", "Vuetify", "VueJs", "Mobile First"],
   "links": {
     "source": "https://github.com/cuongdinhngo/vex-visurel",
     "demo": "https://cuongdinhngo.github.io/vex-visurel/"
