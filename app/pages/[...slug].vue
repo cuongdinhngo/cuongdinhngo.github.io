@@ -1,11 +1,38 @@
 <template>
   <div>
     <ContentRenderer v-if="page" :value="page" />
-    <div v-else class="error-page">
-      <h1>Page Not Found</h1>
-      <p>The page you're looking for doesn't exist.</p>
-      <NuxtLink to="/">← Back to Home</NuxtLink>
-    </div>
+    <v-card
+      v-else
+      class="elevation-0 mx-auto my-15 rounded-lg py-10"
+      width="50%"
+    >
+      <v-card-title class="text-center">
+        <v-avatar
+          size="100"
+          class="pa-1 bg-white rounded-circle"
+          variant="elevated"
+        >
+          <v-icon color="warning" size="90">mdi-account-hard-hat-outline</v-icon>
+        </v-avatar>
+      </v-card-title>
+      <v-card-text class="text-center my-4">
+        <p class="text-body-1">Page is not existed</p>
+      </v-card-text>
+      <v-card-title class="text-center">
+        <v-btn
+          color="primary"
+          variant="flat"
+          class="text-none rounded-lg"
+          to="/"
+          size="large"
+        >
+          <template #append>
+            <v-icon size="large">mdi-home-heart</v-icon>
+          </template>
+          Visit my home
+        </v-btn>
+      </v-card-title>
+    </v-card>
   </div>
 </template>
 
