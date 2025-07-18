@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   app: {
-    baseURL: '/profile/', // GitHub Pages repository name
+    baseURL: '/',
   },
   nitro: {
     output: {
