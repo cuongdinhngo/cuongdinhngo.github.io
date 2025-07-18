@@ -5,6 +5,13 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '/',
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/images/ngo-dinh-cuong.png' },
+        { rel: 'apple-touch-icon', href: '/images/ngo-dinh-cuong.png' },
+        { rel: 'shortcut icon', href: '/images/ngo-dinh-cuong.png' }
+      ]
+    }
   },
   nitro: {
     output: {
