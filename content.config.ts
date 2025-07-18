@@ -55,6 +55,7 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         image: z.string(),
+        scaleImage: z.boolean().default(false),
         tech: z.array(z.string()),
         links: z.object({
           source: z.string().optional(),

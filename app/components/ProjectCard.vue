@@ -6,12 +6,13 @@
         class="elevation-0 rounded-lg"
         :class="{ 'on-hover': isHovering }"
       >
-        <v-responsive :aspect-ratio="16/9" class="overflow-hidden">
+        <v-responsive :aspect-ratio="16/9">
           <v-img
             :src="getImagePath(project.image)"
             cover
-            class="transition-transform"
-            :class="{ 'image-hover': isHovering }"
+            :class="['transition-transform', {'mx-auto': project.scaleImage}, { 'image-hover': isHovering }]"
+            :width="project.scaleImage ? '50%' : '100%'"
+            :alt="project.title"
           ></v-img>
         </v-responsive>
         <v-card-title class="text-subtitle-1 font-weight-bold">{{ project.title }}</v-card-title>
@@ -58,6 +59,7 @@ interface Project {
   title: string;
   description: string;
   image: string;
+  scaleImage?: boolean;
   tech: string[];
   links: {
     source: string;
