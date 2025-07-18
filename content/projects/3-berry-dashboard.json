@@ -1,6 +1,6 @@
 {
   "title": "Berry Dashboard",
-  "description": "Berry Dashboard is a modern admin dashboard template built with Vue.js and Nuxt. It features a clean and responsive design, making it suitable for various applications.",
+  "description": "Berry Dashboard is a modern admin dashboard template built with VueJs and Nuxt. It features a clean and responsive design, making it suitable for various applications.",
   "image": "berry-dashboard.png",
   "tech": ["Vue.js", "Nuxt", "Vuetify"],
   "links": {

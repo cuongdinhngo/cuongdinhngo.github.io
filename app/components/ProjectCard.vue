@@ -15,13 +15,15 @@
           ></v-img>
         </v-responsive>
         <v-card-title class="text-subtitle-1 font-weight-bold">{{ project.title }}</v-card-title>
-        <v-card-subtitle class="text-subtitle-2 text-wrap">{{ project.description }}</v-card-subtitle>
+        <v-card-subtitle class="text-subtitle-2 text-wrap ml-4">
+          <div v-html="parseToBulletPoints(project.description)"></div>
+        </v-card-subtitle>
         <v-card-title class="d-flex flex-wrap">
           <v-chip
             v-for="tag in project.tech"
             :key="tag"
             class="ma-1"
-            :color="isHovering ? 'highlight' : 'badge'"
+            :color="isHovering ? 'warning' : 'badge'"
             :variant="isHovering ? 'elevated' : 'tonal'"
           >
             {{ tag }}
@@ -38,7 +40,7 @@
             <span :class="[isHovering ? 'font-weight-bold' : 'font-italic']">Live Demo</span>
           </v-btn>
           <v-btn
-            color="secondary"
+            color="faceoff"
             text prepend-icon="mdi-application-brackets-outline"
             class="text-none"
             :href="project.links.source"
@@ -65,7 +67,7 @@ interface Project {
 
 const props = defineProps({
   project: {
-    type: Object,
+    type: Object as () => Project,
     required: true
   }
 });

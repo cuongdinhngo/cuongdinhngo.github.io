@@ -5,8 +5,12 @@
         <ProfileCard />
 
         <v-card-title class="text-center">
-          <p class="text-h6 font-weight-bold text-highlight">Projects</p>
-          <p class="text-subtitle-1">A list of projects I've worked on</p>
+          <p class="text-h6 font-weight-bold text-highlight">
+            <slot name="project_title" />
+          </p>
+          <p class="text-subtitle-1">
+            <slot name="project_subtitle" />
+          </p>
         </v-card-title>
 
         <v-card-text class="mt-5">
@@ -33,7 +37,6 @@
   </v-row>
 </template>
 <script setup lang="ts">
-import type { Collections } from '@nuxt/content';
 
 const { data:projects, status} = await useAsyncData(
   'projects',
