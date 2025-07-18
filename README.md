@@ -22,12 +22,12 @@ I'm a **Full Stack Developer** with 10+ years of experience building enterprise-
 ### 📚 [Book Management App](https://cuongdinhngo.github.io/books-app/)
 Modern library management system with real-time updates
 - **Tech**: Vue.js, Nuxt, Supabase, Tailwind CSS
-- **Features**: CRUD operations, real-time notifications, modern UI
+- **Features**: To manage small libraries including books and orders, real-time notifications, modern UI
 
 ### 👕 [Ecom Fashion](https://cuongdinhngo.github.io/ecom-fashion/profile/)
 Comprehensive e-commerce solution for fashion stores
 - **Tech**: Vue.js, Nuxt, Vuetify, Tauri
-- **Features**: Product management, user profiles, order processing
+- **Features**: Product management, User profiles, Order processing
 
 ## Contact & Availability
 
