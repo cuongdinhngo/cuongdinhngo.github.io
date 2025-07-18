@@ -2,30 +2,7 @@
   <v-row>
     <v-col cols="12" sm="12" md="9" lg="9" class="mx-auto">
       <v-card class="mt-10 elevation-0 bg-transparent" tile width="">
-        <v-card-title class="d-flex flex-column align-center">
-          <v-list-item>
-            <template #title>
-              <span class="text-h5 font-weight-bold">{{ profile.name }}</span>
-            </template>
-            <template #subtitle>
-              <span class="text-subtitle-1 font-weight-bold">{{ profile.title }}</span>
-            </template>
-            <template #prepend>
-              <v-avatar
-                :size="profile.avatarSize"
-                class="pa-1 bg-white"
-                variant="elevated"
-              >
-                <v-img
-                  :src="getImagePath(profile.avatarSrc)"
-                  :alt="`${profile.name}'s Avatar`"
-                  cover
-                  rounded="circle"
-                ></v-img>
-              </v-avatar>
-            </template>
-          </v-list-item>
-        </v-card-title>
+        <ProfileCard />
 
         <v-card-title class="text-center text-h5 font-weight-bold text-wrap">
           <slot name="hero_title" />
@@ -36,7 +13,7 @@
         </v-card-title>
 
         <v-card-title class="text-center">
-          <v-btn text="My Works" variant="flat" class="text-none" color="highlight">
+          <v-btn text="My Works" variant="flat" class="text-none" color="highlight" to="/projects">
             <template #append>
               <v-icon>mdi-chevron-right</v-icon>
             </template>
@@ -87,21 +64,6 @@
 </template>
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
-import { getImagePath } from '~/utils';
-
-interface Profile {
-  name: string;
-  title: string;
-  avatarSize: number;
-  avatarSrc: string;
-}
-
-const props = defineProps({
-  profile: {
-    type: Object as () => Profile,
-    required: true
-  }
-});
 
 const { data: socialData } = await useAsyncData(
   'social-links',

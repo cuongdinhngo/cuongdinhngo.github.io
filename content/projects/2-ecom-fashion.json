@@ -1,0 +1,10 @@
+{
+  "title": "Ecom Fashion",
+  "description": "It provides a comprehensive solution for managing an online fashion store, including product listings, user profiles, and order management. The application is built with Vue.js and Nuxt, utilizing Vuetify for UI components and Tauri for Mobile application capabilities.",
+  "image": "ecom-fashion.png",
+  "tech": ["Vue.js", "Nuxt", "Vuetify", "Tauri"],
+  "links": {
+    "source": "https://github.com/cuongdinhngo/ecom-fashion",
+    "demo": "https://cuongdinhngo.github.io/ecom-fashion/profile/"
+  }
+}

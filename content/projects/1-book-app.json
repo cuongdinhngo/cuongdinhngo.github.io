@@ -1,0 +1,10 @@
+{
+  "title": "Book Management App",
+  "description": "To manage small libraries, this app allows users to add, edit, and delete books. It features a user-friendly interface built with Vue.js and Nuxt, utilizing Supabase for backend services. Realtime notifications are implemented to keep the UI updated with the latest changes. The app is styled with Tailwind CSS for a modern look.",
+  "image": "book-app.png",
+  "tech": ["Vue.js", "Nuxt", "Nuxt UI", "Supabase", "Tailwind CSS"],
+  "links": {
+    "source": "https://github.com/cuongdinhngo/books-app",
+    "demo": "https://cuongdinhngo.github.io/books-app/"
+  }
+}
