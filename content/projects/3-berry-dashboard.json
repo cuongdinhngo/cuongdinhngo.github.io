@@ -5,6 +5,6 @@
   "tech": ["Vue.js", "Nuxt", "Vuetify"],
   "links": {
     "source": "https://github.com/cuongdinhngo/berry-dashboard",
-    "demo": "https://cuongdinhngo.github.io/ecom-fashion/profile/"
+    "demo": "https://cuongdinhngo.github.io/berry-dashboard/ecom/products"
   }
 }
