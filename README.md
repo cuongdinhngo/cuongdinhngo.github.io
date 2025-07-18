@@ -11,10 +11,10 @@
 I'm a **Full Stack Developer** with 10+ years of experience building enterprise-scale applications.
 
 ### 💻 Tech Stack
-**Frontend**: Vue.js, Nuxt.js, Vuetify, Tailwind CSS
-**Backend**: PHP, Laravel, Symfony
-**Cloud**: AWS (Lambda, S3, DynamoDB, SQS, ECS), Alibaba Cloud
-**Database**: MySQL, ElasticSearch, Redis, Aerospike
+**Frontend**: Vue.js, Nuxt.js, Vuetify, Tailwind CSS  
+**Backend**: PHP, Laravel, Symfony  
+**Cloud**: AWS (Lambda, S3, DynamoDB, SQS, ECS), Alibaba Cloud  
+**Database**: MySQL, ElasticSearch, Redis, Aerospike  
 **Tools**: Jenkins CI/CD, Git, Docker
 
 ## Featured Projects
