@@ -51,7 +51,7 @@
                 <v-icon icon="mdi-school-outline" size="25" />
                 <p class="text-h6 font-weight-bold">Education</p>
               </v-card-title>
-              <TimelineAccordion
+              <Milestone
                 v-if="educationStatus === 'success'"
                 :items="education"
               />
@@ -64,6 +64,7 @@
 </template>
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content';
+import Milestone from '../Milestone.vue';
 
 const { data: socialData } = await useAsyncData(
   'social-links',
