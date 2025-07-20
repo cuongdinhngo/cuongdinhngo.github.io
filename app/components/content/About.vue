@@ -2,8 +2,10 @@
   <v-row>
     <v-col cols="12" sm="12" md="9" lg="9" class="mx-auto">
       <v-card class="mt-10 elevation-0 bg-transparent" tile width="">
+        <!-- Profile Avatar -->
         <ProfileCard />
 
+        <!-- Hero Section -->
         <v-card-title class="text-center text-h5 font-weight-bold text-wrap">
           <slot name="hero_title" />
         </v-card-title>
@@ -12,6 +14,15 @@
           <slot name="hero_subtitle" />
         </v-card-title>
 
+        <!-- Project Slider -->
+        <v-card-text class="d-flex justify-center pa-0">
+          <ProjectSlider
+            v-if="status === 'success'"
+            :items="projects"
+          />
+        </v-card-text>
+
+        <!-- My Works Button -->
         <v-card-title class="text-center">
           <v-btn text="My Works" variant="flat" class="text-none" color="highlight" to="/projects">
             <template #append>
@@ -20,6 +31,7 @@
           </v-btn>
         </v-card-title>
 
+        <!-- Social Links -->
         <v-card-title class="text-center my-5">
           <v-btn
             v-for="link in socialData"
@@ -34,6 +46,8 @@
             <v-icon size="large">{{ link.icon }}</v-icon>
           </v-btn>
         </v-card-title>
+
+        <!-- Experience and Education Sections -->
         <v-card-text>
           <v-row>
             <v-col cols="12" sm="12" md="6" lg="6">
@@ -87,6 +101,14 @@ const { data: education, status:educationStatus } = await useAsyncData(
   async() => await queryCollection('education_timeline').select('meta').first() as Collections['education_timeline'],
   {
     transform: (data) => data.meta.body
+  }
+);
+
+const { data:projects, status} = await useAsyncData(
+  'projects',
+  async() => await queryCollection('projects').select('meta').all(),
+  {
+    transform: (data: any) => data.map((item: any) => item.meta.body)
   }
 );
 </script>
