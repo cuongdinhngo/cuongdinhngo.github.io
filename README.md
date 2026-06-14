@@ -1,35 +1,49 @@
-# Cuong Ngo - Full Stack Developer
+# Cuong Ngo — Full Stack Developer
 
-> Building scalable web applications with modern technologies
+> Personal portfolio. Building scalable web applications with modern technologies.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-ngodinhcuong-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ngodinhcuong/)
 [![GitHub](https://img.shields.io/badge/GitHub-cuongdinhngo-grey?style=flat&logo=github)](https://github.com/cuongdinhngo)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=flat)](https://cuongdinhngo.github.io)
 
-## About Me
+A modern, dark-themed portfolio built with **React + Vite + Tailwind CSS** ("Aurora" design language).
 
-I'm a **Full Stack Developer** with 10+ years of experience building enterprise-scale applications.
+## Tech stack
 
-### 💻 Tech Stack
-**Frontend**: Vue.js, Nuxt.js, Vuetify, Tailwind CSS  
-**Backend**: PHP, Laravel, Symfony, TypeScript  
-**Cloud**: AWS (Lambda, S3, DynamoDB, SQS, ECS), Alibaba Cloud  
-**Database**: MySQL, ElasticSearch, Redis, Aerospike  
-**Tools**: Jenkins CI/CD, Git, Docker
+- **React 18** + **TypeScript**, bundled with **Vite**
+- **Tailwind CSS** for styling
+- **React Router** (clean URLs, with a GitHub Pages SPA redirect fallback)
+- Deployed to **GitHub Pages** via GitHub Actions
 
-## Featured Projects
+## Development
 
-### 📚 [Book Management App](https://cuongdinhngo.github.io/books-app/)
-Modern library management system with real-time updates
-- **Tech**: Vue.js, Nuxt, Supabase, Tailwind CSS
-- **Features**: To manage small libraries including books and orders, real-time notifications, modern UI
+```bash
+bun install      # install dependencies
+bun run dev      # start the dev server (http://localhost:5173)
+bun run build    # production build -> dist/
+bun run preview  # preview the production build
+```
 
-### 👕 [Ecom Fashion](https://cuongdinhngo.github.io/ecom-fashion/profile/)
-Comprehensive e-commerce solution for fashion stores
-- **Tech**: Vue.js, Nuxt, Vuetify, Tauri
-- **Features**: Product management, User profiles, Order processing
+## Project structure
 
-## Contact & Availability
+```
+index.html            # app shell + SPA redirect restore script
+public/               # static assets (images, robots.txt, 404.html SPA redirect)
+src/
+  main.tsx            # entry (BrowserRouter)
+  App.tsx             # routes: / , /projects , 404
+  index.css           # Tailwind + Aurora design tokens / component classes
+  data/               # content: profile, projects, experience, education, social
+  components/         # Navbar, Hero, ProjectCard, Experience, Education, Contact, Icons
+  pages/              # Home, Projects, NotFound
+```
 
-📧 **Available for**: Full-time positions, consulting, and freelance projects  
-🌍 **Location**: Open to remote work and relocation 
+Content lives in `src/data/*` — edit those files to update projects, experience, education, and contact details.
+
+## Deployment
+
+Pushing to `main` triggers `.github/workflows/deployment.yml`, which builds with Bun and publishes `dist/` to GitHub Pages.
+
+## Contact
+
+📧 dinhcuongngo@gmail.com — available for full-time, consulting, and freelance work. Open to remote and relocation.
